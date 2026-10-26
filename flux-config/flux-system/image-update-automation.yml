@@ -1,0 +1,20 @@
+apiVersion: image.toolkit.fluxcd.io/v1
+kind: ImageUpdateAutomation
+metadata:
+  name: flux-cd-image-automation
+  namespace: flux-system
+spec:
+  interval: 1m
+  sourceRef:
+    kind: GitRepository
+    name: flux-system
+  git:
+    commit:
+      author:
+        name: Flux
+        email: flux@example.com
+    push:
+      branch: main
+  update:
+    path: ./manifests
+    strategy: Setters

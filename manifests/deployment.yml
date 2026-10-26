@@ -14,6 +14,6 @@ spec:
     spec:
       containers:
         - name: website
-          image: saicowdary9/flux-cd:v1
+          image: saicowdary9/flux-cd:v1  # {"$imagepolicy": "flux-system:flux-cd-policy"}
           ports:
             - containerPort: 80

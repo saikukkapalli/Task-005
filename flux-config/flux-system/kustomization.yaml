@@ -6,3 +6,5 @@ resources:
 - app-sync.yml
 - image-repository.yml
 - image-policy.yml
+- image-update-automation.yml 
+
