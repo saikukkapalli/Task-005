@@ -3,7 +3,6 @@ kind: Service
 metadata:
   name: flux-cd-service
 spec:
-   
   selector:
     app: flux-cd-app
   ports:
