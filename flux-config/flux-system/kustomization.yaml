@@ -5,4 +5,4 @@ resources:
 - gotk-sync.yaml
 - app-sync.yml
 - image-repository.yml
-
+- image-policy.yml
