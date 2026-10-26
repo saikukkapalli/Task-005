@@ -24,7 +24,7 @@ jobs:
       - name: Build and Push image
         uses: docker/build-push-action@v6
         with:
-          context: .
+          context: ./app
           push: true
           tags: saicowdary9/flux-cd:${{ github.run_number }}
         
