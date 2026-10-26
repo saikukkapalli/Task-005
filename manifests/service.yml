@@ -1,0 +1,11 @@
+apiVersion: v1
+kind: Service
+metadata:
+  name: flux-cd-service
+spec:
+   
+  selector:
+    app: flux-cd-app
+  ports:
+  - port: 80
+    targetPort: 80

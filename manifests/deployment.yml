@@ -1,0 +1,19 @@
+apiVersion: apps/v1
+kind: Deployment 
+metadata:
+  name: flux-cd-app
+spec:
+  replicas: 1 
+  selector:
+      matchLabels:
+        app: flux-cd-app
+  template:
+    metadata:
+      labels:
+        app: flux-cd-app 
+    spec:
+      containers:
+        - name: website
+          image: saicowdary9/flux-cd:v1
+          ports:
+            - containerPort: 80
